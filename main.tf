@@ -1,3 +1,11 @@
+terraform {
+  # The configuration for this backend will be filled in by Terragrunt
+  backend "s3" {}
+}
+
+provider "aws" {}
+
+
 locals {
   max_subnet_length = max(
     length(var.private_subnets),
