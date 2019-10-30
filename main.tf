@@ -3,7 +3,10 @@ terraform {
   backend "s3" {}
 }
 
-provider "aws" {}
+provider "aws" {
+  region = "${var.aws_region}"
+  profile = "${var.ss_profile}"
+}
 
 
 locals {
