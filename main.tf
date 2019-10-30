@@ -5,7 +5,7 @@ terraform {
 
 provider "aws" {
   region = "${var.aws_region}"
-  profile = "${var.ss_profile}"
+  profile = "${var.ss_org_profile}"
 }
 
 

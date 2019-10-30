@@ -10,7 +10,7 @@ variable "name" {
   default     = ""
 }
 
-variable "ss_profile" {}
+variable "ss_org_profile" {}
 variable "ss_env" {}
 variable "aws_region" {}
 
