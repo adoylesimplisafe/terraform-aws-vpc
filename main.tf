@@ -33,7 +33,7 @@ locals {
     var.vpc_endpoint_tags,
   )
 
-  az_list = formatlist("${var.aws_region}%s", ${var.azs})
+  az_list = formatlist("${var.aws_region}%s", "${var.azs}")
 }
 
 ######
